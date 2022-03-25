@@ -14,9 +14,9 @@ Below you can see out final architecture and results.
 
 ## How to Run the Code
 
-Parametric_Base_Code.ipynb: Our parametric code in which we can change the tuning parameters without making any other changes in the model. All the adjustments (stride, dimensions, etc) are pre-handled.
+Parametric_Base_Code.ipynb: Our parametric code in which we can change the tuning parameters without making any other changes in the model. All the adjustments (stride, dimensions, etc) are pre-handled. he method of joint optimization that we explained in our report is done in this code.
 
-Long_Run_9_Batch_64_Fast.ipynb: Our final architecture, joint optimization code. 
+Final_Model_Training.ipynb: Our final architecture. 
 
 
 
