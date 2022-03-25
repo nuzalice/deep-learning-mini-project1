@@ -1,1 +1,5 @@
-# deep-learning-mini-project1
+# Deep Learning Mini Project1
+Hyperparameter Tuning on CIFAR10 Dataset using ResNet18
+
+
+We sought to find the best performing model using less than 5 million parameters on CIFAR-10 test set data with ResNet architecture while modifying 6 architecture specific parameters, doing general hyperparameter tuning, and performing transformations. We first varied the 6 architecture specific parameters one a time keeping other parameters fixed at ResNet18 values. Then based on our understanding of how each parameter affects the final model, we chose a subset of values for each parameter to test in a joint optimization. We ran the best performing parameter assignment from the joint optimization for 500 epochs, achieving a final test set accuracy of 92.5\%. For general hyperparameter tuning and transformations, we selected values and transformations successful in the literature. The ResNet architecture parameter assignment was N = 3, $B_i = 2$, $C_i = 85$, $F_i = 3$, P = 8, $K_i = 1$. We used ADAM optimizer with $\beta_1 = 0.9$ and $\beta_2 = 0.999$, a learning rate scheduler where we start with lr=0.001 and decay it 10\% every 10 epochs, batch size 64, and various transformations to train our network.
